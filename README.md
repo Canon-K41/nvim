@@ -70,4 +70,3 @@ To use icons with `nvim-tree`, you may need to download and install the necessar
 
 ### 4. telescpole needs same other module
 ---
-
