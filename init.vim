@@ -12,16 +12,22 @@ Plug 'nvim-tree/nvim-tree.lua'      " File explorer
 " Commenting utilities
 Plug 'numToStr/Comment.nvim'  " Commenting plugin
 " Utilities and libraries
-Plug 'nvim-lua/plenary.nvim'  " Utility functions for Neovim
 Plug 'FotiadisM/tabset.nvim'  " Tab management plugin
+Plug 'nvim-lualine/lualine.nvim' " add status line
 " File and buffer management
 Plug 'romgrk/barbar.nvim'     " Buffer line management
 " Telescope for fuzzy finding
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }  " Fuzzy finder
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+
+
+"junp
+Plug 'phaazon/hop.nvim'
 " Indentation guides
 Plug 'Yggdroot/indentLine'
-
-
+"Plug 'shellRaining/hlchunk.nvim'
+"surrunging  
+Plug 'kylechui/nvim-surround'
 " Emmet support
 Plug 'mattn/emmet-vim'  " Emmet support for HTML/CSS
 " LSP (Language Server Protocol) configuration
@@ -49,7 +55,7 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\lsp-setting.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\cmp.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\lspkind.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-hight-color.lua
-
+source C:\Program Files\Neovim\share\nvim\plugs-setting\default-setting.lua
 " auto md VimEnter * execute 'cd C:/Users/kaika/workplace'
 
 "LSPを入れた後はlsp-setting.luaとcmp.luaに記入

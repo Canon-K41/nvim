@@ -66,7 +66,8 @@ source C:\Program Files\Neovim\share\nvim\keymap.vim
 ### 3. Install Fonts for Icons (Optional)
 
 To use icons with `nvim-tree`, you may need to download and install the necessary fonts. Follow the instructions provided in this [Qiita article](https://qiita.com/hwatahik/items/acdd791abeef4ed13c45) for detailed guidance on font installation.
+[fons](https://www.nerdfonts.com/font-downloads)
 
+### 4. telescpole needs same other module
 ---
 
-This README provides clear instructions on installing and configuring `vim-plug` with Neovim, ensuring that paths to configuration files are correctly referenced.
