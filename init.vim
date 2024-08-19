@@ -43,9 +43,7 @@ Plug 'onsails/lspkind.nvim'  " Symbols for LSP completion
 call plug#end()
 
 " プラグイン設定ファイルを読み込む
-source C:\Program Files\Neovim\share\nvim\plugs-setting\neovim-ayu.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-tree.lua
-source C:\Program Files\Neovim\share\nvim\plugs-setting\comment.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\tabset.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\lsp-setting.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\cmp.lua

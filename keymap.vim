@@ -65,6 +65,7 @@ nnoremap <space>wm :vsplit<CR>
 " Terminal management mappings
 nnoremap <silent> <space>wt :belowright split <bar> resize -6 <bar> terminal<CR>:set modifiable<CR>i
 nnoremap <silent> <Space>tt :tabnew <Bar> terminal<CR>:set modifiable<CR>i
+tnoremap <Esc> :bd!<CR>
 
 " Switch between windows with 'space + l' in Normal mode
 nnoremap <space>l <C-w>w
@@ -73,6 +74,14 @@ nnoremap <space>l <C-w>w
 nnoremap <space>j :BufferPrevious<CR>
 nnoremap <space>k :BufferNext<CR>
 nnoremap <Esc> :BufferDelete<CR>
+
+" Map zz to toggle fold
+nnoremap zz za
+
+"change colorscheme
+nnoremap <F1> :colorscheme ayu-mirage<CR>
+nnoremap <F2> :colorscheme retrobox<CR>
+nnoremap <F3> :colorscheme sorbet<CR>
 
 " Toggle NvimTree with 'space + tr' in Normal mode
 nnoremap <space>tr :NvimTreeFindFileToggle<CR>

@@ -5,11 +5,11 @@ vim.g.loaded_netrwPlugin = 1
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
--- empty setup using defaults
-require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
+  update_cwd = true,
+
   sort = {
     sorter = "case_sensitive",
   },
@@ -17,11 +17,13 @@ require("nvim-tree").setup({
     width = 30,
   },
   renderer = {
-    group_empty = true,
+    highlight_opened_files = "name",
   },
   filters = {
     dotfiles = false,
-
+  },
+  git = {
+    ignore = false,
   },
 })
 
