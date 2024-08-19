@@ -67,33 +67,6 @@ local cmp = require'cmp'
   })
 
 
--- LSP サーバーの能力設定
-local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
-require('lspconfig').cssls.setup{
-    capabilities = capabilities,
-}
-require('lspconfig').html.setup{
-    capabilities = capabilities,
-}
-require('lspconfig').pyright.setup{
-    capabilities = capabilities, 
-}
-require('lspconfig').clangd.setup{
-  capabilities = capabilities, 
-}
-require('lspconfig').jsonls.setup{
-  capabilities = capabilities, 
-}
-require('lspconfig').rust_analyzer.setup{
-  capabilities = capabilities, 
-}
-require('lspconfig').tsserver.setup{
-  capabilities = capabilities, 
-}
-require('lspconfig').jdtls.setup{
-  capabilities = capabilities, 
-}
-
 local lspkind = require('lspkind')
 cmp.setup {
   formatting = {

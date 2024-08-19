@@ -13,7 +13,6 @@ cmp.setup({
         mode = 'symbol_text',  -- シンボルとテキストを表示
         maxwidth = 50,         -- テキストの最大幅
         ellipsis_char = '...', -- 切り捨て記号
-        -- 任意の lspkind 設定をここに追加
       })(entry, item)
 
       -- 色のハイライトがある場合はそれを適用
@@ -40,7 +39,7 @@ highlight_colors.setup({
   enable_hsl = true,
   enable_var_usage = true,
   enable_named_colors = true,
-  enable_tailwind = false,
+  enable_tailwind = true,
   custom_colors = {
     { label = '%-%-theme%-primary%-color', color = '#0f1219' },
     { label = '%-%-theme%-secondary%-color', color = '#5a5d64' },
