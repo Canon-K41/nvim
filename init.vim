@@ -54,6 +54,6 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\cmp.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\lspkind.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-hight-color.lua
 
-autocmd VimEnter * execute 'cd C:/Users/kaika/workplace'
+" auto md VimEnter * execute 'cd C:/Users/kaika/workplace'
 
 "LSPを入れた後はlsp-setting.luaとcmp.luaに記入

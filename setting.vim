@@ -16,6 +16,8 @@ set showmatch
 " let g:gruvbox_contrast_dark='hard'
 set modifiable
 set encoding=utf-8
+set foldmethod=indent
+set foldlevelstart=99
 
 
 
