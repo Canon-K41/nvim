@@ -1,9 +1,14 @@
-
 " プラグインマネージャーを初期化
 call plug#begin()
-
+"treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+"start booster
+Plug 'lewis6991/impatient.nvim'
+"start Page
+Plug 'goolord/alpha-nvim'
 " Colorschemes
 Plug 'Shatur/neovim-ayu'  " Ayu color scheme
+Plug 'folke/tokyonight.nvim'
 " Highlight colors
 Plug 'brenoprata10/nvim-highlight-colors'  " Highlight color codes
 " Icons for file explorer and other UI components
@@ -19,13 +24,16 @@ Plug 'romgrk/barbar.nvim'     " Buffer line management
 " Telescope for fuzzy finding
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
-
-
+"notification
+Plug 'rcarriga/nvim-notify'
+Plug 'folke/noice.nvim'
+Plug 'MunifTanjim/nui.nvim'
 "junp
 Plug 'phaazon/hop.nvim'
+"autopairs
+Plug 'windwp/nvim-autopairs'
 " Indentation guides
-Plug 'Yggdroot/indentLine'
-"Plug 'shellRaining/hlchunk.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 "surrunging  
 Plug 'kylechui/nvim-surround'
 " Emmet support
@@ -55,6 +63,8 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\lsp-setting.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\cmp.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\lspkind.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-hight-color.lua
+source C:\Program Files\Neovim\share\nvim\plugs-setting\alpha.lua
+source C:\Program Files\Neovim\share\nvim\plugs-setting\treesitter.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\default-setting.lua
 " auto md VimEnter * execute 'cd C:/Users/kaika/workplace'
 
@@ -63,3 +73,5 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\default-setting.lua
 " EtNeovimの設定ファイル
 source C:\Program Files\Neovim\share\nvim\setting.vim
 source C:\Program Files\Neovim\share\nvim\keymap.vim
+
+

@@ -11,3 +11,19 @@ require("nvim-surround").setup()
 -- phaazon/hop.nvim
 -- https://github.com/hadronized/hop.nvim
 require('hop').setup()
+
+require("ibl").setup()
+
+-- 'goolord/alpha-nvim'
+-- https://github.com/windwp/nvim-autopairs
+require('impatient')
+
+-- 'folke/noice.nvim'
+-- https://github.com/folke/noice.nvim
+require("noice").setup()
+
+
+-- https://github.com/windwp/nvim-autopairs
+-- nvim-autopairs
+require('nvim-autopairs').setup({
+})

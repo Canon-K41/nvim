@@ -10,15 +10,15 @@ inoremap <C-j> <down>
 inoremap <C-k> <up>
 
 " Auto-pair brackets, quotes, and backticks in Insert mode
-inoremap ( ()<LEFT>
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
-inoremap ` ``<LEFT>
-inoremap < <><LEFT>
-
-" Modify movement behavior for k, K, j, J, H, and L keys in Normal and Visual modes
+"inoremap ( ()<LEFT>
+"inoremap { {}<LEFT>
+"inoremap [ []<LEFT>
+"inoremap " ""<LEFT>
+"inoremap ' ''<LEFT>
+"inoremap ` ``<LEFT>
+"inoremap < <><LEFT>
+"
+"" Modify movement behavior for k, K, j, J, H, and L keys in Normal and Visual modes
 nnoremap k gk
 vnoremap k gk
 nnoremap K 10k
@@ -80,8 +80,9 @@ nnoremap zz za
 
 "change colorscheme
 nnoremap <F1> :colorscheme ayu-mirage<CR>
-nnoremap <F2> :colorscheme retrobox<CR>
-nnoremap <F3> :colorscheme sorbet<CR>
+nnoremap <F2> :colorscheme tokyonight-moon<CR>
+nnoremap <F3> :colorscheme tokyonight-night<CR>
+nnoremap <F4> :colorscheme retrobox<CR>
 
 " Toggle NvimTree with 'space + tr' in Normal mode
 nnoremap <space>tr :NvimTreeFindFileToggle<CR>
@@ -91,12 +92,10 @@ nnoremap <space>ff :Telescope find_files<CR><Esc>
 nnoremap <space>fg :Telescope live_grep<CR>
 nnoremap <space>fb :Telescope buffers<CR><Esc>
 
-" Save and source the current file with F5 in Normal mode
-nnoremap <F5> :w<CR>:source %<CR>  
 
 " Exit terminal mode gracefully with Esc
 tnoremap <Esc> exit<CR>
 
 " Change Emmet shortcut to Ctrl + e
-let g:user_emmet_leader_key='<C-Space>'
-let g:user_emmet_expandabbr_key='<C-Space>'
+let g:user_emmet_leader_key='<C-e>'
+let g:user_emmet_expandabbr_key='<C-e>'

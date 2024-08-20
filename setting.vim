@@ -18,6 +18,6 @@ set modifiable
 set encoding=utf-8
 set foldmethod=indent
 set foldlevelstart=99
-colorscheme ayu-mirage
+colorscheme tokyonight-night
 
 

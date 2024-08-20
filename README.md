@@ -69,4 +69,5 @@ To use icons with `nvim-tree`, you may need to download and install the necessar
 [fons](https://www.nerdfonts.com/font-downloads)
 
 ### 4. telescpole needs same other module
+### 5.tresssitter needs c conpile
 ---
