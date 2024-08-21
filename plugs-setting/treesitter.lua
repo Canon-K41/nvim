@@ -1,4 +1,3 @@
-
 require('nvim-treesitter.configs').setup({
   -- ハイライト機能の有効化
   highlight = {

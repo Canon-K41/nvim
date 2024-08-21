@@ -21,7 +21,9 @@ Plug 'FotiadisM/tabset.nvim'  " Tab management plugin
 Plug 'nvim-lualine/lualine.nvim' " add status line
 " File and buffer management
 Plug 'romgrk/barbar.nvim'     " Buffer line management
-" Telescope for fuzzy finding
+" Telescope for fuzzy finding and media file
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-telescope/telescope-media-files.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 "notification
@@ -66,6 +68,9 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-hight-color.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\alpha.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\treesitter.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\default-setting.lua
+source C:\Program Files\Neovim\share\nvim\plugs-setting\telescope.lua
+source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-notify.lua
+source C:\Program Files\Neovim\share\nvim\plugs-setting\hop.lua
 " auto md VimEnter * execute 'cd C:/Users/kaika/workplace'
 
 "LSPを入れた後はlsp-setting.luaとcmp.luaに記入

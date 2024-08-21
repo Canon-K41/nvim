@@ -9,15 +9,6 @@ inoremap <C-h> <left>
 inoremap <C-j> <down>
 inoremap <C-k> <up>
 
-" Auto-pair brackets, quotes, and backticks in Insert mode
-"inoremap ( ()<LEFT>
-"inoremap { {}<LEFT>
-"inoremap [ []<LEFT>
-"inoremap " ""<LEFT>
-"inoremap ' ''<LEFT>
-"inoremap ` ``<LEFT>
-"inoremap < <><LEFT>
-"
 "" Modify movement behavior for k, K, j, J, H, and L keys in Normal and Visual modes
 nnoremap k gk
 vnoremap k gk
@@ -41,6 +32,9 @@ nnoremap ; "_xh
 vnoremap ; "_xh
 nnoremap YY ggVGy
 
+" Map zz to toggle fold
+nnoremap zz za
+
 " Save file with 'space + space' in Normal mode
 nnoremap <space><space> :w<CR>
 
@@ -55,6 +49,14 @@ nnoremap <CR> $a<CR><Esc>
 nnoremap <space><CR> a<CR><Esc>
 nnoremap <Backspace> 0i<Backspace><Esc>
 
+" Buffer management mappings
+nnoremap <space>j :BufferPrevious<CR>
+nnoremap <space>k :BufferNext<CR>
+nnoremap <Esc> :BufferDelete<CR>
+
+" Switch between windows with 'space + l' in Normal mode
+nnoremap <space>l <C-w>w
+
 " Window management mappings
 nnoremap <space>wd :close<CR>       
 nnoremap <space>wh <C-w><          
@@ -67,31 +69,32 @@ nnoremap <silent> <space>wt :belowright split <bar> resize -6 <bar> terminal<CR>
 nnoremap <silent> <Space>tt :tabnew <Bar> terminal<CR>:set modifiable<CR>i
 tnoremap <Esc> :bd!<CR>
 
-" Switch between windows with 'space + l' in Normal mode
-nnoremap <space>l <C-w>w
 
-" Buffer management mappings
-nnoremap <space>j :BufferPrevious<CR>
-nnoremap <space>k :BufferNext<CR>
-nnoremap <Esc> :BufferDelete<CR>
-
-" Map zz to toggle fold
-nnoremap zz za
 
 "change colorscheme
-nnoremap <F1> :colorscheme ayu-mirage<CR>
-nnoremap <F2> :colorscheme tokyonight-moon<CR>
+nnoremap <F1> :colorscheme ayu-dark<CR>
+nnoremap <F2> :colorscheme ayu-mirage<CR>
 nnoremap <F3> :colorscheme tokyonight-night<CR>
-nnoremap <F4> :colorscheme retrobox<CR>
+nnoremap <F4> :colorscheme tokyonight-moon<CR>
+nnoremap <F5> :colorscheme tokyonight-storm<CR>
+nnoremap <F6> :colorscheme retrobox<CR>
+nnoremap <F7> :colorscheme habamax<CR>
+nnoremap <F8> :colorscheme sorbet<CR>
+nnoremap <F9> :colorscheme slate<CR>
+nnoremap <F10> :colorscheme desert<CR>
 
 " Toggle NvimTree with 'space + tr' in Normal mode
 nnoremap <space>tr :NvimTreeFindFileToggle<CR>
 
 " Telescope mappings for file search
 nnoremap <space>ff :Telescope find_files<CR><Esc>
-nnoremap <space>fg :Telescope live_grep<CR>
+nnoremap <space>fl :Telescope live_grep<CR><Esc>
 nnoremap <space>fb :Telescope buffers<CR><Esc>
+nnoremap <space>fg :Telescope git_status<CR><Esc>
 
+"hop mappings for jump
+nnoremap f :HopChar2<CR>
+nnoremap / :HopPattern<CR>
 
 " Exit terminal mode gracefully with Esc
 tnoremap <Esc> exit<CR>

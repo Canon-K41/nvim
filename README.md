@@ -70,4 +70,6 @@ To use icons with `nvim-tree`, you may need to download and install the necessar
 
 ### 4. telescpole needs same other module
 ### 5.tresssitter needs c conpile
+i can use Mingw
+https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support
 ---

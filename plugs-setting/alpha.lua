@@ -23,7 +23,6 @@ dashboard.section.buttons.val = {
     dashboard.button("r", "📄  Recent files", ":Telescope oldfiles <CR>"),
     dashboard.button("s", "⚙️  Settings", ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
     dashboard.button("d", "🖥️  Workplace", ":e C:\\Users\\kaika\\workplace<CR> | :cd C:\\Users\\kaika\\workplace<CR> | split . | wincmd k | pwd<CR>"),
-    dashboard.button("g", "📜  Git status", ":Telescope git_status<CR>"),
     dashboard.button("t", "📚  TODO list", ":e ~/todo.txt<CR>"),
     dashboard.button("q", "🚪  Quit", ":qa<CR>"),
 }
