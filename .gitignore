@@ -1,1 +1,3 @@
 runtime
+init.vim
+plugs-settig/alpha.lua

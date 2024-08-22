@@ -7,6 +7,7 @@ Plug 'lewis6991/impatient.nvim'
 "start Page
 Plug 'goolord/alpha-nvim'
 " Colorschemes
+Plug 'rebelot/kanagawa.nvim'
 Plug 'Shatur/neovim-ayu'  " Ayu color scheme
 Plug 'folke/tokyonight.nvim'
 " Highlight colors
@@ -71,6 +72,7 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\default-setting.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\telescope.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-notify.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\hop.lua
+
 " auto md VimEnter * execute 'cd C:/Users/kaika/workplace'
 
 "LSPを入れた後はlsp-setting.luaとcmp.luaに記入
