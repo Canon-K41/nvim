@@ -13,11 +13,7 @@ require('nvim-treesitter.configs').setup({
     enable = true,               -- コードの折りたたみを有効にする
   },
   -- インストールする言語の指定
-  ensure_installed = {
-    "lua", "python", "javascript", "typescript", "html", "css", "go", "c", "rust",
-    "vim", "regex", "bash", "markdown", "markdown_inline"
-  },
-  ignore_install = {},           -- 言語パーサーをインストールしない言語のリスト
+  ensure_installed = all,          -- 言語パーサーをインストールしない言語のリスト
   matchup = {
     enable = true,               -- `nvim-treesitter` のマッチアップ機能を有効にする
   },
