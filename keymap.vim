@@ -31,6 +31,7 @@ xnoremap K :m '<-2<CR>gv=gv
 nnoremap ; "_xh
 vnoremap ; "_xh
 nnoremap YY ggVGy
+"nnoremap DD ggVGx
 
 " Map zz to toggle fold
 nnoremap zz za
@@ -43,6 +44,9 @@ nnoremap <space><space> :w<CR>
 ":set tags=./tags,tags;
 nnoremap F <C-]> 
 nnoremap T <C-t>
+
+"cd workspace
+"nnoremap ! :cd /Users/kaika/workplace<CR>
 
 " Simplify line breaks and backspace behavior in Normal mode
 nnoremap <CR> $a<CR><Esc>
@@ -93,8 +97,10 @@ nnoremap <space>fb :Telescope buffers<CR><Esc>
 nnoremap <space>fg :Telescope git_status<CR><Esc>
 
 "hop mappings for jump
-nnoremap f :HopChar2<CR>
-nnoremap / :HopPattern<CR>
+nnoremap <space>hc :HopChar2<CR>
+nnoremap <space>hp :HopPattern<CR>
+nnoremap <space>hw :HopWord<CR>
+nnoremap <space>hl :HopLine<CR>
 
 " Exit terminal mode gracefully with Esc
 tnoremap <Esc> exit<CR>
@@ -102,3 +108,12 @@ tnoremap <Esc> exit<CR>
 " Change Emmet shortcut to Ctrl + e
 let g:user_emmet_leader_key='<C-e>'
 let g:user_emmet_expandabbr_key='<C-e>'
+
+
+"-- --    Old text                    Command         New text
+"-- --------------------------------------------------------------------------------
+"--     surr*ound_words             ysiw)           (surround_words)
+"--     *make strings               ys$"            "make strings"
+"--     [delete ar*ound me!]        ds]             delete around me!
+"--     remove <b>HTML t*ags</b>    dst             remove HTML tags
+"--     'change quot*es'            cs'"            "change quotes"

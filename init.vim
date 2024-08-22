@@ -1,5 +1,4 @@
 " プラグインマネージャーを初期化
-"
 call plug#begin()
 "treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -8,6 +7,7 @@ Plug 'lewis6991/impatient.nvim'
 "start Page
 Plug 'goolord/alpha-nvim'
 " Colorschemes
+Plug 'rebelot/kanagawa.nvim'
 Plug 'Shatur/neovim-ayu'  " Ayu color scheme
 Plug 'folke/tokyonight.nvim'
 " Highlight colors
@@ -58,7 +58,6 @@ Plug 'hrsh7th/cmp-vsnip'  " VSnip source for nvim-cmp
 Plug 'onsails/lspkind.nvim'  " Symbols for LSP completion
 
 call plug#end()
-
 " プラグイン設定ファイルを読み込む
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-tree.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\tabset.lua
@@ -72,12 +71,7 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\default-setting.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\telescope.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-notify.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\hop.lua
-" auto md VimEnter * execute 'cd C:/Program Files/kaika/workplace'
-
 "LSPを入れた後はlsp-setting.luaとcmp.luaに記入
-"
 " EtNeovimの設定ファイル
 source C:\Program Files\Neovim\share\nvim\setting.vim
 source C:\Program Files\Neovim\share\nvim\keymap.vim
-
-

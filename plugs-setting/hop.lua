@@ -1,3 +1,3 @@
 require'hop'.setup {
-  keys = 'asdfghjkl;',  -- ジャンプに使うキーをカスタマイズ
+  keys = 'asdfghjkl;ewiopq',  -- ジャンプに使うキーをカスタマイズ
 }

@@ -19,7 +19,6 @@ require('telescope').setup {
   extensions = {
     media_files = {
       filetypes = {"png", "mp4", "pdf", "webp", "jpg", "jpeg", "svg"},
-      find_cmd = "rg"
     }
   },
 }
