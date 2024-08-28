@@ -42,8 +42,7 @@ nnoremap <space><space> :w<CR>
 " Junpe to define
 "ctags -R .
 ":set tags=./tags,tags;
-nnoremap F <C-]> 
-nnoremap T <C-t>
+nnoremap ? <C-]> 
 
 "cd workspace
 "nnoremap ! :cd /Users/kaika/workplace<CR>
@@ -54,26 +53,19 @@ nnoremap <space><CR> a<CR><Esc>
 nnoremap <Backspace> 0i<Backspace><Esc>
 
 " Buffer management mappings
-nnoremap <space>j :BufferPrevious<CR>
-nnoremap <space>k :BufferNext<CR>
+nnoremap <C-j> :BufferPrevious<CR>
+nnoremap <C-k> :BufferNext<CR>
 nnoremap <Esc> :BufferDelete<CR>
 
 " Switch between windows with 'space + l' in Normal mode
-nnoremap <space>l <C-w>w
+nnoremap <C-l> <C-w>w
 
 " Window management mappings
-nnoremap <space>wd :close<CR>       
-nnoremap <space>wh <C-w><          
-nnoremap <space>wl <C-w>>           
-nnoremap <space>ww :only<CR>       
-nnoremap <space>wm :vsplit<CR>    
-
-" Terminal management mappings
-nnoremap <silent> <space>wt :belowright split <bar> resize -6 <bar> terminal<CR>:set modifiable<CR>i
-nnoremap <silent> <Space>tt :tabnew <Bar> terminal<CR>:set modifiable<CR>i
-tnoremap <Esc> :bd!<CR>
-
-
+nnoremap <C-c> :close<CR>       
+nnoremap <C->> <C-w><          
+nnoremap <C-<> <C-w>>           
+nnoremap <C-o> :only<CR>       
+nnoremap <C-w> :vsplit<CR>    
 
 "change colorscheme
 nnoremap <F1> :colorscheme ayu-dark<CR>
@@ -87,23 +79,35 @@ nnoremap <F8> :colorscheme sorbet<CR>
 nnoremap <F9> :colorscheme slate<CR>
 nnoremap <F10> :colorscheme desert<CR>
 
-" Toggle NvimTree with 'space + tr' in Normal mode
-nnoremap <space>tr :NvimTreeFindFileToggle<CR>
+" Terminal management mappings
+"nnoremap <silent> <Space>tt :tabnew <Bar> terminal<CR>:set modifiable<CR>i
+nnoremap <C-t><C-t> :ToggleTerm direction=tab<CR> 
+nnoremap <C-t><C-f> :ToggleTerm direction=float<CR> 
+nnoremap <C-t><C-h> :ToggleTerm direction=horizontal<CR>
+tnoremap <Esc> exit<CR>
 
-" Telescope mappings for file search
-nnoremap <space>ff :Telescope find_files<CR><Esc>
-nnoremap <space>fl :Telescope live_grep<CR><Esc>
-nnoremap <space>fb :Telescope buffers<CR><Esc>
-nnoremap <space>fg :Telescope git_status<CR><Esc>
+
+" Toggle NvimTree with 'space + tr' in Normal mode
+nnoremap <C-t><C-r> :NvimTreeFindFileToggle<CR>
+
+"ll Telescope mappings for file search
+nnoremap <C-f><C-f> :Telescope find_files<CR><Esc>
+nnoremap <C-f><C-b> :Telescope buffers<CR><Esc>
+nnoremap <C-f><C-g> :Telescope live_grep<CR><Esc>
+nnoremap <C-f><C-s> :Telescope grep_string<CR><Esc>
+nnoremap <C-f><C-n> :Telescope notify<CR><Esc>
+nnoremap <C-f><C-m> :Telescope marks<CR><Esc>
+nnoremap <C-f><C-r> :Telescope lsp_references<CR><Esc>
+nnoremap <C-g><C-s> :Telescope git_status<CR><Esc>
+nnoremap <C-g><C-b> :Telescope git_branches<CR><Esc>
+nnoremap <C-g><C-s> :Telescope git_stash<CR><Esc>
 
 "hop mappings for jump
-nnoremap <space>hc :HopChar2<CR>
-nnoremap <space>hp :HopPattern<CR>
-nnoremap <space>hw :HopWord<CR>
-nnoremap <space>hl :HopLine<CR>
+nnoremap <C-h><C-c> :HopChar2<CR>
+nnoremap <C-h><C-p> :HopPattern<CR>
+nnoremap <C-h><C-w> :HopWord<CR>
+nnoremap <C-h><C-l> :HopLine<CR>
 
-" Exit terminal mode gracefully with Esc
-tnoremap <Esc> exit<CR>
 
 " Change Emmet shortcut to Ctrl + e
 let g:user_emmet_leader_key='<C-e>'

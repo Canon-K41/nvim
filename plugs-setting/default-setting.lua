@@ -41,3 +41,10 @@ require('nvim-autopairs').setup({
 -- https://github.com/akinsho/toggleterm.nvim
 -- toggleterm,nvim
 require("toggleterm").setup()
+
+vim.cmd [[
+  highlight Pmenu guifg=#ffffff guibg=#282828
+  highlight PmenuSel guifg=#ffffff guibg=#007acc
+  highlight PmenuSbar guifg=#ffffff guibg=#404040
+  highlight PmenuThumb guifg=#ffffff guibg=#606060
+]]

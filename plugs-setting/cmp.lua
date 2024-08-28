@@ -21,16 +21,13 @@ local cmp = require'cmp'
       ['<C-Space>'] = cmp.mapping.complete(),
       ['<C-e>'] = cmp.mapping.abort(),
       ['<CR>'] = cmp.mapping.confirm({ select = true }), 
-      ['<DOWN>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
-      ['<UP>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
+      ['<C-j>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
+      ['<C-k>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
     -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
       { name = 'vsnip' }, -- For vsnip users.
-      -- { name = 'luasnip' }, -- For luasnip users.
-      -- { name = 'ultisnips' }, -- For ultisnips users.
-      -- { name = 'snippy' }, -- For snippy users.
     }, {
       { name = 'buffer' },
     })
@@ -87,3 +84,17 @@ cmp.setup {
     })
   }
 }
+
+-- NeovimのLua設定ファイル（init.lua）に追加
+
+-- LSPの設定
+require('lspconfig').your_language_server.setup({
+  -- 他の設定項目
+  on_attach = function(client, bufnr)
+    -- 他の設定項目
+    vim.cmd [[
+      setlocal textwidth=0
+      setlocal wrap
+    ]]
+  end,
+})

@@ -19,9 +19,9 @@ Plug 'nvim-tree/nvim-tree.lua'      " File explorer
 Plug 'numToStr/Comment.nvim'  " Commenting plugin
 " Utilities and libraries
 Plug 'FotiadisM/tabset.nvim'  " Tab management plugin
-Plug 'nvim-lualine/lualine.nvim' " add status line
 " File and buffer management
 Plug 'romgrk/barbar.nvim'     " Buffer line management
+Plug 'nvim-lualine/lualine.nvim' " add status line
 " Telescope for fuzzy finding and media file
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope-media-files.nvim'
