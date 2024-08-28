@@ -45,6 +45,8 @@ Plug 'mattn/emmet-vim'  " Emmet support for HTML/CSS
 Plug 'neovim/nvim-lspconfig'  " LSP configuration
 Plug 'williamboman/mason.nvim'  " LSP installer
 Plug 'williamboman/mason-lspconfig.nvim'  " LSP configuration integration with Mason
+"terminal
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 " Completion plugins
 Plug 'hrsh7th/nvim-cmp'  " Autocompletion framework
 Plug 'hrsh7th/cmp-nvim-lsp'  " LSP source for nvim-cmp
@@ -58,6 +60,7 @@ Plug 'hrsh7th/cmp-vsnip'  " VSnip source for nvim-cmp
 Plug 'onsails/lspkind.nvim'  " Symbols for LSP completion
 
 call plug#end()
+
 " プラグイン設定ファイルを読み込む
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-tree.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\tabset.lua

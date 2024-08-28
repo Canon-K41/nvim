@@ -37,3 +37,7 @@ require("noice").setup()
 -- nvim-autopairs
 require('nvim-autopairs').setup({
 })
+
+-- https://github.com/akinsho/toggleterm.nvim
+-- toggleterm,nvim
+require("toggleterm").setup()
