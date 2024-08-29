@@ -53,7 +53,7 @@ nnoremap <space><CR> a<CR><Esc>
 nnoremap <Backspace> 0i<Backspace><Esc>
 
 " Buffer management mappings
-nnoremap <C-j> :BufferPrevious<CR>
+"nnoremap <C-j> :BufferPrevious<CR>
 nnoremap <C-k> :BufferNext<CR>
 nnoremap <Esc> :BufferDelete<CR>
 

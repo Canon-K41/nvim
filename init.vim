@@ -58,6 +58,12 @@ Plug 'saadparwaiz1/cmp_luasnip'  " LuaSnip source for nvim-cmp
 Plug 'hrsh7th/vim-vsnip'  " VSnip snippets
 Plug 'hrsh7th/cmp-vsnip'  " VSnip source for nvim-cmp
 Plug 'onsails/lspkind.nvim'  " Symbols for LSP completion
+"copolit
+Plug 'github/copilot.vim'
+
+Plug 'zbirenbaum/copilot.lua'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 
 call plug#end()
 
@@ -74,7 +80,9 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\default-setting.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\telescope.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-notify.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\hop.lua
+source C:\Program Files\Neovim\share\nvim\plugs-setting\copilot.lua
 "LSPを入れた後はlsp-setting.luaとcmp.luaに記入
 " EtNeovimの設定ファイル
 source C:\Program Files\Neovim\share\nvim\setting.vim
-source C:\Program Files\Neovim\share\nvim\keymap.vim
+source C:\Program Files\Neovim\share\nvim\keymap.lua
+
