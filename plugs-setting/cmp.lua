@@ -85,16 +85,3 @@ cmp.setup {
   }
 }
 
--- NeovimのLua設定ファイル（init.lua）に追加
-
--- LSPの設定
-require('lspconfig').your_language_server.setup({
-  -- 他の設定項目
-  on_attach = function(client, bufnr)
-    -- 他の設定項目
-    vim.cmd [[
-      setlocal textwidth=0
-      setlocal wrap
-    ]]
-  end,
-})

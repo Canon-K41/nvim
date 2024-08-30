@@ -83,6 +83,6 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\hop.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\copilot.lua
 "LSPを入れた後はlsp-setting.luaとcmp.luaに記入
 " EtNeovimの設定ファイル
-source C:\Program Files\Neovim\share\nvim\setting.vim
+source C:\Program Files\Neovim\share\nvim\setting.lua
 source C:\Program Files\Neovim\share\nvim\keymap.lua
 

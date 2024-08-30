@@ -82,6 +82,10 @@ vim.api.nvim_set_keymap('t', '<Esc>', 'exit<CR>', { noremap = true, silent = tru
 -- Toggle NvimTree with 'space + tr' in Normal mode
 vim.api.nvim_set_keymap('n', '<C-t><C-r>', ':NvimTreeFindFileToggle<CR>', { noremap = true, silent = true })
 
+-- Move to the pre-next diagnostic message
+-- vim.api.nvim_set_keymap('n', '<C-e><C-p>', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-e>', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
+
 -- Telescope mappings for file search
 vim.api.nvim_set_keymap('n', '<C-f><C-f>', ':Telescope find_files<CR><Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-f><C-b>', ':Telescope buffers<CR><Esc>', { noremap = true, silent = true })
