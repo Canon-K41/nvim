@@ -62,7 +62,6 @@ Plug 'onsails/lspkind.nvim'  " Symbols for LSP completion
 Plug 'github/copilot.vim'
 
 Plug 'zbirenbaum/copilot.lua'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 
 call plug#end()
