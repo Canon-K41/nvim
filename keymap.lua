@@ -37,7 +37,7 @@ vim.api.nvim_set_keymap('n', 'YY', 'ggVGy', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'zz', 'za', { noremap = true, silent = true })
 
 -- Save file with 'space + space' in Normal mode
-vim.api.nvim_set_keymap('n', '<space><space>', ':w<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>w', ':w<CR>', { noremap = true, silent = true })
 
 -- Jump to definition
 vim.api.nvim_set_keymap('n', '?', '<C-]>', { noremap = true, silent = true })
@@ -48,11 +48,14 @@ vim.api.nvim_set_keymap('n', '<space><CR>', 'a<CR><Esc>', { noremap = true, sile
 vim.api.nvim_set_keymap('n', '<Backspace>', '0i<Backspace><Esc>', { noremap = true, silent = true })
 
 -- Buffer management mappings
+vim.api.nvim_set_keymap('n', '<space>j', ':BufferPrevious<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-j>', ':BufferPrevious<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>k', ':BufferNext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', ':BufferNext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Esc>', ':BufferDelete<CR>', { noremap = true, silent = true })
 
 -- Switch between windows with 'space + l' in Normal mode
+vim.api.nvim_set_keymap('n', '<space>l', '<C-w>w', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>w', { noremap = true, silent = true })
 
 -- Window management mappings
@@ -76,10 +79,12 @@ vim.api.nvim_set_keymap('n', '<F10>', ':colorscheme desert<CR>', { noremap = tru
 -- Terminal management mappings
 vim.api.nvim_set_keymap('n', '<C-t><C-t>', ':ToggleTerm direction=tab<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-t><C-f>', ':ToggleTerm direction=float<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>t', ':ToggleTerm direction=float<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-t><C-h>', ':ToggleTerm direction=horizontal<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('t', '<Esc>', 'exit<CR>', { noremap = true, silent = true })
 
 -- Toggle NvimTree with 'space + tr' in Normal mode
+vim.api.nvim_set_keymap('n', '<space>s', ':NvimTreeFindFileToggle<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-t><C-r>', ':NvimTreeFindFileToggle<CR>', { noremap = true, silent = true })
 
 -- Move to the pre-next diagnostic message
@@ -90,6 +95,7 @@ vim.api.nvim_set_keymap('n', '<C-e>', '<cmd>lua vim.diagnostic.goto_next()<CR>',
 vim.api.nvim_set_keymap('n', '<C-f><C-f>', ':Telescope find_files<CR><Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-f><C-b>', ':Telescope buffers<CR><Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-f><C-g>', ':Telescope live_grep<CR><Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>g', ':Telescope live_grep<CR><Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-f><C-s>', ':Telescope grep_string<CR><Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-f><C-n>', ':Telescope notify<CR><Esc>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-f><C-m>', ':Telescope marks<CR><Esc>', { noremap = true, silent = true })
@@ -100,14 +106,19 @@ vim.api.nvim_set_keymap('n', '<C-g><C-s>', ':Telescope git_stash<CR><Esc>', { no
 
 -- Hop mappings for jump
 vim.api.nvim_set_keymap('n', '<C-h><C-c>', ':HopChar2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>f', ':HopChar2<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h><C-p>', ':HopPattern<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h><C-w>', ':HopWord<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>h', ':HopWord<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h><C-l>', ':HopLine<CR>', { noremap = true, silent = true })
 
 --coliopilot chat
+vim.api.nvim_set_keymap('n', '<space>c', ':CopilotChat<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-c>", "<cmd>lua CopilotChatBuffer()<cr>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("x", "<C-c>", "<cmd>lua ShowCopilotChatActionPrompt()<cr>", { noremap = true, silent = true })
 
 -- Change Emmet shortcut to Ctrl + e
 vim.g.user_emmet_leader_key = '<C-e>'
 vim.g.user_emmet_expandabbr_key = '<C-e>'
+
+vim.api.nvim_set_keymap('n', '<space>n', ':noh<CR>', { noremap = true, silent = true })
