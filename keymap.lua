@@ -29,8 +29,6 @@ vim.api.nvim_set_keymap('x', '<C-j>', ":m '>+1<CR>gv=gv", { noremap = true, sile
 vim.api.nvim_set_keymap('x', '<C-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 
 -- Map ';' to delete characters in Normal and Visual modes, and copy all text with 'YY'
-vim.api.nvim_set_keymap('n', ';', '"_xh', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', ';', '"_xh', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'YY', 'ggVGy', { noremap = true, silent = true })
 
 -- Map zz to toggle fold
