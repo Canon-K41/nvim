@@ -82,6 +82,7 @@ Treesitterを使用するには、Cコンパイラが必要です。Mingwを使�
 ### 6. Copilotの認証
 
 以下のコマンドを実行してCopilotをセットアップします:
+ファイルの場所によっては管理者権限で実行して下さい。
 ```vim
 :copilot setup
 ```
