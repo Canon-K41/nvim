@@ -29,8 +29,6 @@ vim.api.nvim_set_keymap('x', '<C-j>', ":m '>+1<CR>gv=gv", { noremap = true, sile
 vim.api.nvim_set_keymap('x', '<C-k>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 
 -- Map ';' to delete characters in Normal and Visual modes, and copy all text with 'YY'
-vim.api.nvim_set_keymap('n', ';', '"_xh', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', ';', '"_xh', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'YY', 'ggVGy', { noremap = true, silent = true })
 
 -- Map zz to toggle fold
@@ -39,8 +37,9 @@ vim.api.nvim_set_keymap('n', 'zz', 'za', { noremap = true, silent = true })
 -- Save file with 'space + space' in Normal mode
 vim.api.nvim_set_keymap('n', '<space>w', ':w<CR>', { noremap = true, silent = true })
 
--- Jump to definition
-vim.api.nvim_set_keymap('n', '?', '<C-]>', { noremap = true, silent = true })
+-- Jump to definition or show explani
+vim.api.nvim_set_keymap('n', ';', ':lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '+', '<C-]>', { noremap = true, silent = true })
 
 -- Simplify line breaks and backspace behavior in Normal mode
 vim.api.nvim_set_keymap('n', '<CR>', '$a<CR><Esc>', { noremap = true, silent = true })
@@ -89,7 +88,7 @@ vim.api.nvim_set_keymap('n', '<C-t><C-r>', ':NvimTreeFindFileToggle<CR>', { nore
 
 -- Move to the pre-next diagnostic message
 -- vim.api.nvim_set_keymap('n', '<C-e><C-p>', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-e>', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<C-e>', '<cmd>lua vim.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
 
 -- Telescope mappings for file search
 vim.api.nvim_set_keymap('n', '<C-f><C-f>', ':Telescope find_files<CR><Esc>', { noremap = true, silent = true })
@@ -106,7 +105,6 @@ vim.api.nvim_set_keymap('n', '<C-g><C-s>', ':Telescope git_stash<CR><Esc>', { no
 
 -- Hop mappings for jump
 vim.api.nvim_set_keymap('n', '<C-h><C-c>', ':HopChar2<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<space>f', ':HopChar2<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h><C-p>', ':HopPattern<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-h><C-w>', ':HopWord<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<space>h', ':HopWord<CR>', { noremap = true, silent = true })
