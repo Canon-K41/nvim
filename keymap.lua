@@ -38,8 +38,8 @@ vim.api.nvim_set_keymap('n', 'zz', 'za', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<space>w', ':w<CR>', { noremap = true, silent = true })
 
 -- Jump to definition or show explani
-vim.api.nvim_set_keymap('n', ';', ':lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '+', '<C-]>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>e', ':lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>d', '<C-]>', { noremap = true, silent = true })
 
 -- Simplify line breaks and backspace behavior in Normal mode
 vim.api.nvim_set_keymap('n', '<CR>', '$a<CR><Esc>', { noremap = true, silent = true })
