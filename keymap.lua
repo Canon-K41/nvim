@@ -113,6 +113,7 @@ vim.api.nvim_set_keymap('n', '<C-h><C-l>', ':HopLine<CR>', { noremap = true, sil
 --coliopilot chat
 vim.api.nvim_set_keymap('n', '<space>c', ':CopilotChat<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-c>", "<cmd>lua CopilotChatBuffer()<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<space>c', ':CopilotChat<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("x", "<C-c>", "<cmd>lua ShowCopilotChatActionPrompt()<cr>", { noremap = true, silent = true })
 
 -- Change Emmet shortcut to Ctrl + e
