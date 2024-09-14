@@ -24,7 +24,7 @@ dashboard.section.buttons.val = {
     dashboard.button("r", "📄  Recent files", ":Telescope oldfiles <CR>"),
     dashboard.button("s", "⚙️  Settings", ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
     dashboard.button("d", "🖥️  Workplace", ":e " .. user_path .. "\\workplace<CR> | :cd " .. user_path .. "\\workplace<CR> | split . | wincmd k | pwd<CR>"),
-    dashboard.button("t", "📚  TODO list", ":e ~/todo.txt<CR>"),
+    dashboard.button("t", "📚  TODO list", ":e " .. user_path .. "\\workplace\\Document\\TODO.md<CR> | :cd " .. user_path .. "\\workplace\\Document<CR> | split . | wincmd k | pwd<CR>"),
     dashboard.button("q", "🚪  Quit", ":qa<CR>"),
 }
 -- Send config to alpha
