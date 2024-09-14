@@ -6,9 +6,6 @@ require("CopilotChat").setup {
   -- プロンプトの設定
   -- デフォルトは英語なので日本語でオーバーライドしています
     prompts = {
-      Quesion = {
-        prompt = '次のコードに関して質問があります',
-      },
       Explain = {
         prompt = "/COPILOT_EXPLAIN 上記のコードを妹になりきって日本語で説明してください",
         description = "バディにコードの説明をお願いする",
@@ -72,8 +69,8 @@ require("CopilotChat").setup {
           insert = '<Esc>',
         },
         reset = {
-          normal ='r',
-          insert = 'r'
+          normal ='<C-r>',
+          insert = '<C-r>',
         },
     }
 }
