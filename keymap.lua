@@ -121,3 +121,5 @@ vim.g.user_emmet_leader_key = '<C-e>'
 vim.g.user_emmet_expandabbr_key = '<C-e>'
 
 vim.api.nvim_set_keymap('n', '<space>n', ':noh<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<space>md', ':RenderMarkdown<CR>', { noremap = true, silent = true })
