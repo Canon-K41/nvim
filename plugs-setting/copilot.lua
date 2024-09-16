@@ -73,7 +73,7 @@ require("CopilotChat").setup {
         },
         reset = {
           normal ='r',
-          insert = 'r'
+          insert = '<C-r>',
         },
     }
 }
