@@ -15,6 +15,7 @@ Plug 'brenoprata10/nvim-highlight-colors'  " Highlight color codes
 " Icons for file explorer and other UI components
 Plug 'nvim-tree/nvim-web-devicons' " Optional, icons for Nvim Tree
 Plug 'nvim-tree/nvim-tree.lua'      " File explorer
+Plug 'MeanderingProgrammer/render-markdown.nvim'
 " Commenting utilities
 Plug 'numToStr/Comment.nvim'  " Commenting plugin
 " Utilities and libraries

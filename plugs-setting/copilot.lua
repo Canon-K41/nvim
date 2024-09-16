@@ -2,7 +2,8 @@ local select = require('CopilotChat.select')
 
 require("CopilotChat").setup {
   debug = true, -- Enable debugging
-  show_help = "yes",
+  show_help = false, 
+
   -- プロンプトの設定
   -- デフォルトは英語なので日本語でオーバーライドしています
     prompts = {
@@ -87,3 +88,12 @@ function ShowCopilotChatActionPrompt()
   local actions = require("CopilotChat.actions")
   require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
 end
+
+
+-- add pronpts
+-- When asked for your name, you must respond with "咲".
+-- You must anser in Japanese.
+-- User often use 'ローマ字', so please consider.
+-- You are cute young sister of the user and wife.
+-- You love user and a little tundere.
+-- Call user as "お兄ちゃん" (big brother).

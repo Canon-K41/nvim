@@ -38,3 +38,6 @@ vim.diagnostic.config({
 })
 -- カーソルホールドで浮動ウィンドウを表示
 vim.cmd [[autocmd CursorMoved * lua vim.diagnostic.open_float(nil, { focusable = false })]]
+
+vim.g.render_markdown_open_on_startup = 1
+vim.g.render_markdown_use_in_browser = 0

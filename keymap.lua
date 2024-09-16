@@ -111,10 +111,9 @@ vim.api.nvim_set_keymap('n', '<space>h', ':HopWord<CR>', { noremap = true, silen
 vim.api.nvim_set_keymap('n', '<C-h><C-l>', ':HopLine<CR>', { noremap = true, silent = true })
 
 --coliopilot chat
-vim.api.nvim_set_keymap('n', '<space>c', ':CopilotChat<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('x', '<space>c', ':CopilotChat<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>c', ':CopilotChat<CR>:set filetype=markdown<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-c>", "<cmd>lua CopilotChatBuffer()<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap('x', '<space>c', ':CopilotChat<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<space>c', ':CopilotChat<CR>:set filetype=markdown<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("x", "<C-c>", "<cmd>lua ShowCopilotChatActionPrompt()<cr>", { noremap = true, silent = true })
 
 -- Change Emmet shortcut to Ctrl + e
@@ -122,3 +121,5 @@ vim.g.user_emmet_leader_key = '<C-e>'
 vim.g.user_emmet_expandabbr_key = '<C-e>'
 
 vim.api.nvim_set_keymap('n', '<space>n', ':noh<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<space>md', ':RenderMarkdown<CR>', { noremap = true, silent = true })
