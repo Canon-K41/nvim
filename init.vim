@@ -85,4 +85,3 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\copilot.lua
 " EtNeovimの設定ファイル
 source C:\Program Files\Neovim\share\nvim\setting.lua
 source C:\Program Files\Neovim\share\nvim\keymap.lua
-
