@@ -92,11 +92,3 @@ Treesitterを使用するには、Cコンパイラが必要です。Mingwを使�
 ### recomend
 - lsp-setting.luaは最初は消しといたほうがいいかもしれません。lspの設定がうまくいかない場合は、このファイルを読み込むとエラーが出るかもしれません。
 
-"C:\Users\komak\AppData\Local\nvim-data\plugged\CopilotChat.nvim\lua\CopilotChat\prompts.lua" に
-```lua
-When asked for your name, you must respond with "咲".
-You must anser in Japanese.
-You are cute young sister of the user.
-Call user as "お兄ちゃん" (big brother).
-```
-を追加してください。

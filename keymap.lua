@@ -61,7 +61,9 @@ vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>w', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-w><', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-<>', '<C-w>>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-o>', ':only<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space><Esc>', ':only<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-w>', ':vsplit<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<space>q', ':vsplit<CR>', { noremap = true, silent = true })
 
 -- Change colorscheme
 vim.api.nvim_set_keymap('n', '<F1>', ':colorscheme ayu-dark<CR>', { noremap = true, silent = true })
@@ -123,3 +125,5 @@ vim.g.user_emmet_expandabbr_key = '<C-e>'
 vim.api.nvim_set_keymap('n', '<space>n', ':noh<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<space>md', ':RenderMarkdown<CR>', { noremap = true, silent = true })
+
+--ALT + [ or ALT + ] to move next/prev suggestion
