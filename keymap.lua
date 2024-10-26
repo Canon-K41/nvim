@@ -72,6 +72,18 @@ vim.api.nvim_set_keymap('n', '<F8>', ':colorscheme sorbet<CR>', { noremap = true
 vim.api.nvim_set_keymap('n', '<F9>', ':colorscheme slate<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<F10>', ':colorscheme desert<CR>', { noremap = true, silent = true })
 
+--registers
+vim.api.nvim_set_keymap('n', '1', '"1', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '2', '"2', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '3', '"3', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '4', '"4', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '5', '"5', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '6', '"6', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '7', '"7', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '8', '"8', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '9', '"9', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '0', '"0', { noremap = true, silent = true })
+
 -- Terminal management mappings
 vim.api.nvim_set_keymap('n', '<C-t><C-t>', ':ToggleTerm direction=tab<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-t><C-f>', ':ToggleTerm direction=float<CR>', { noremap = true, silent = true })
