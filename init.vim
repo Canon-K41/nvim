@@ -2,8 +2,6 @@
 call plug#begin()
 "treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-"start booster
-Plug 'lewis6991/impatient.nvim'
 "start Page
 Plug 'goolord/alpha-nvim'
 " Colorschemes
@@ -18,8 +16,6 @@ Plug 'nvim-tree/nvim-tree.lua'      " File explorer
 Plug 'MeanderingProgrammer/render-markdown.nvim'
 " Commenting utilities
 Plug 'numToStr/Comment.nvim'  " Commenting plugin
-" Utilities and libraries
-Plug 'FotiadisM/tabset.nvim'  " Tab management plugin
 " File and buffer management
 Plug 'romgrk/barbar.nvim'     " Buffer line management
 Plug 'nvim-lualine/lualine.nvim' " add status line
@@ -32,8 +28,6 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 Plug 'rcarriga/nvim-notify'
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
-"junp
-Plug 'phaazon/hop.nvim'
 "autopairs
 Plug 'windwp/nvim-autopairs'
 " Indentation guides
@@ -69,7 +63,6 @@ call plug#end()
 
 " プラグイン設定ファイルを読み込む
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-tree.lua
-source C:\Program Files\Neovim\share\nvim\plugs-setting\tabset.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\lsp-setting.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\cmp.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\lspkind.lua
@@ -79,7 +72,6 @@ source C:\Program Files\Neovim\share\nvim\plugs-setting\treesitter.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\default-setting.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\telescope.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\nvim-notify.lua
-source C:\Program Files\Neovim\share\nvim\plugs-setting\hop.lua
 source C:\Program Files\Neovim\share\nvim\plugs-setting\copilot.lua
 "LSPを入れた後はlsp-setting.luaとcmp.luaに記入
 " EtNeovimの設定ファイル

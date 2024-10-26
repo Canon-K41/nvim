@@ -1,4 +1,3 @@
-
 require('telescope').setup{
   defaults = {
     layout_config = {
@@ -12,14 +11,5 @@ require('telescope').setup{
     },
     -- その他の設定
   }
-}
-
-require('telescope').load_extension('media_files')
-require('telescope').setup {
-  extensions = {
-    media_files = {
-      filetypes = {"png", "mp4", "pdf", "webp", "jpg", "jpeg", "svg"},
-    }
-  },
 }
 

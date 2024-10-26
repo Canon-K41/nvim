@@ -89,6 +89,7 @@ Treesitterを使用するには、Cコンパイラが必要です。Mingwを使�
 :copilot setup
 ```
 `CopilotChat.nvim\lua\CopilotChat\prompts.lua`に初期プロンプトがあるので、適宜変更してください。
+`chonfig.lu`にデフォルトのプロンプトが設定されています。
 ### recomend
 - lsp-setting.luaは最初は消しといたほうがいいかもしれません。lspの設定がうまくいかない場合は、このファイルを読み込むとエラーが出るかもしれません。
 
